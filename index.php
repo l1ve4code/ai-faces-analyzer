@@ -204,11 +204,13 @@
                                                 $color = [$faceColorR, $faceColorG, $faceColorB];
                                                 $_SESSION["faces"][$fetch[$i]["img_src"]][$key] = json_encode($face->info()["landmarks"]);
                                                 $_SESSION["faces"]["colors"][$key] = $color;
+                                                if($fetch[$i]["name"] != ""){
+                                                    echo '<p style = "font-family: \'Russo One\', sans-serif;">На фото: '.$fetch[$i]["name"].'</p>';
+                                                }
                                                 echo '<p style = "font-family: \'Russo One\', sans-serif;">Людей на фото: '.count($faces).'</p>';
                                                 echo '<ul>
                                                         <li style = "font-family: \'Russo One\', sans-serif;"><strong>В каске: </strong>'.$face->info()["headwearLikelihood"].'</li>
                                                     </ul>';
-                                                $people++;
                                         echo '</div>
                                     </div>';
                                         }

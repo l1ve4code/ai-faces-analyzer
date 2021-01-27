@@ -6,6 +6,7 @@
 при помощи AI.
 
 [Ссылка на лэндинг](http://landing-grinatom.std-926.ist.mospolytech.ru)
+
 [Ссылка на рабочую версию](http://grinatom.std-926.ist.mospolytech.ru)
 
 Задачи:
